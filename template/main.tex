@@ -1,33 +1,29 @@
 \pdfoutput=1
-\documentclass{maththesis} % use option [toc] to include table of contents
+\documentclass{maththesis}
 \usepackage{rutarmacros}
 \usepackage{macros}
 
-% uncomment to add bibliography file
-% \addbibresource{main.bib}
-
-\title[SHORT]{TITLE}
-
-% uncomment to include journal reference
-% \journal{REPLACE}
-
-% or pass a citation key to build from .bib file automatically
-% \journalcite{REPLACE}
-
-\author
-  {NAME}
-  {ADDRESS}
-  {EMAIL}
+% main document
+\title{REPLACE}
+\author{REPLACE\thanks{\itshape alex@rutar.org}\\ University of St Andrews}
+\date{REPLACE}
 
 \begin{document}
-\begin{abstract}
-    REPLACE
-\end{abstract}
+\pagenumbering{gobble}
+\hypersetup{pageanchor=false}
+\maketitle
+\newpage
+\frontmatter
+\hypersetup{pageanchor=true}
+\tableofcontents*
+\newpage
 
-\section{Introduction}
+
+\chapter*{Preface}
 REPLACE
 
-\begin{acknowledgements}
-    REPLACE
-\end{acknowledgements}
+\mainmatter
+\chapter{REPLACE}
+\section{REPLACE}
+
 \end{document}
